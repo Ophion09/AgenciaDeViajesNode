@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur tellus urna. Aliquam semper, purus quis rhoncus pellentesque, dolor erat efficitur felis, nec molestie mi augue in lectus. Vivamus ut risus tellus. Maecenas vel odio vel libero aliquet ultrices. Duis venenatis quis tellus id sodales. Donec nunc metus, maximus ut hendrerit a, viverra ac risus. Quisque vestibulum luctus felis ut dictum. Ut ut est non odio faucibus pharetra sit amet a ex. Proin convallis mollis lacus, imperdiet finibus orci rutrum eu. Nunc nisi felis, ornare eget dui vel, ornare imperdiet metus. Etiam vel velit sollicitudin, aliquam eros non, vehicula magna. Vivamus eget est sit amet purus consectetur vestibulum sit amet ut dui.
+
+                p In eu luctus augue. Proin cursus purus id lorem cursus sollicitudin. Phasellus ex erat, bibendum vitae dictum ut, elementum ut sem. Pellentesque in magna hendrerit, maximus velit sit amet, dapibus nunc. Sed nisl velit, viverra nec mollis in, luctus in neque. Morbi ligula massa, convallis vel odio vitae, dictum posuere ex. Aenean nibh mauris, scelerisque vitae est in, tempus imperdiet neque. Phasellus eget aliquam ex. Nulla et blandit purus. Mauris mi eros, finibus sit amet volutpat tincidunt, eleifend ut lorem. Sed efficitur urna nec porta euismod. Nam vitae felis vitae ipsum tempus mollis.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        include ./layout/bloque_viajes.pug
+    
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2500 USD 
+
+    .container 
+        h2.mt-5.text-center Testimoniales 
+            include ./layout/bloque_testimoniales.pug
